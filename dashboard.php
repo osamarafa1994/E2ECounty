@@ -43,13 +43,9 @@
               <button class="btn btn-<?php echo $cases[$user['status']]?>"><?php echo $statuses[$user['status']] ?></button>
             </td>
             <td>
-            <button  class="btn btn-success" title="Accept">
-            <a href="<?php echo BASE_URL; ?>change_status.php?status=3&id=<?php echo $user['id'] ?>"> <i class="fas fa-check"></i></a>     
-          </button>
+            <a  class="btn btn-success" title="Accept" href="<?php echo BASE_URL; ?>change_status.php?status=3&id=<?php echo $user['id'] ?>"> <i class="fas fa-check"></i></a>     
                           
-            <button  class="btn btn-danger" title="Reject"> 
-            <a href="<?php echo BASE_URL; ?>change_status.php?status=2&id=<?php echo $user['id'] ?>" ><i class="fas fa-ban"></i></a>     
-            </button>
+            <a class="btn btn-danger" title="Reject" href="<?php echo BASE_URL; ?>change_status.php?status=2&id=<?php echo $user['id'] ?>" ><i class="fas fa-ban"></i></a>     
             </td>
           </tr>
         <?php endforeach ?>
